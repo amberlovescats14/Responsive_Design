@@ -27,7 +27,7 @@ body {
 .main-grid {
     border: 2px solid black;
     width: 100vw;
-    height: 150vh;
+    height: 175vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -65,10 +65,12 @@ body {
 }
 .dot-wrapper {
     grid-area: 7 / 1/ span 3 /-1;
+    margin-bottom: 100px;
+    /*padding-bottom: 80px;*/
 }
 .dot {
-    height: 140px;
-    width:  140px;
+    height: 210px;
+    width:  210px;
     border: 10px solid white;
     border-radius: 50%;
     font-family: var(--big-font);
@@ -77,9 +79,10 @@ body {
 }
 #top, #bottom {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 50%;
+    flex-wrap: wrap;
 }
 .dot1, .dot2, .dot3, .dot4 {
     display: flex;
@@ -98,14 +101,41 @@ body {
 .dot4 {
     background: var(--teal)
 }
-
 .selected-work-wrapper {
-    background: pink;
+    /*background: pink;*/
+    /*margin-top: 180px;*/
     grid-area:  10 / 1 / span 3 / -1 ;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    text-align: center;
+    margin-top: 100px;
+}
+.selected-work-wrapper p {
+    margin: 20px;
 }
 .last-wrapper {
     background: yellow;
     /*grid-area:  11 / 1 / span 2 / -1;*/
     display: none;
+}
+#feature2, #feature3, #feature4 {
+     display: none;
+}
+.featured-wrapper {
+    /*background-color: #00aba9;*/
+}
+.lil-not-circle {
+    background-color: #00aba9;
+    display: flex;
+    justify-content: space-between;
+}
+.lil-not-circle p {
+
+}
+.lil-not-circle div {
+    display: flex;
+}
+.med-img {
+    height: 60%;
+    width: 80%;
+    border: 5px solid var(--dark-white);
 }
