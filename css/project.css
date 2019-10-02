@@ -30,7 +30,7 @@ body {
     height: 175vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(13, 1fr);
 }
 .nav-wrapper {
     background: black;
@@ -64,24 +64,34 @@ body {
 
 }
 .dot-wrapper {
-    grid-area: 7 / 1/ span 3 /-1;
-    margin-bottom: 100px;
+    grid-area: 7 / 1/ span 4 /-1;
+
     /*padding-bottom: 80px;*/
 }
 .dot {
-    height: 210px;
-    width:  210px;
+    height: 150px;
+    width:  150px;
+    margin: 5px;
     border: 10px solid white;
     border-radius: 50%;
     font-family: var(--big-font);
     color: white;
     font-size: 8vw;
+    font-family: var(--big-font);
 }
-#top, #bottom {
+
+#top {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 50%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 75%;
+}
+#bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30%;
     flex-wrap: wrap;
 }
 .dot1, .dot2, .dot3, .dot4 {
@@ -102,15 +112,14 @@ body {
     background: var(--teal)
 }
 .selected-work-wrapper {
-    /*background: pink;*/
-    /*margin-top: 180px;*/
-    grid-area:  10 / 1 / span 3 / -1 ;
-    /*overflow: hidden;*/
+    grid-area:  11 / 1 / span 3 / -1 ;
+    padding: 10px;
     text-align: center;
-    margin-top: 100px;
+    font-family: var(--small-font);
+
 }
 .selected-work-wrapper p {
-    margin: 20px;
+    /*margin: 20px;*/
 }
 .last-wrapper {
     background: yellow;
@@ -124,15 +133,39 @@ body {
     /*background-color: #00aba9;*/
 }
 .lil-not-circle {
-    background-color: #00aba9;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .lil-not-circle p {
 
 }
 .lil-not-circle div {
     display: flex;
+}
+span {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-family: var(--big-font);
+    font-size: 3vw;
+
+}
+span:nth-of-type(1) {
+    background: var(--red)
+}
+span:nth-of-type(2) {
+    background: var(--orange)
+}
+span:nth-of-type(3) {
+    background: var(--green)
+}
+span:nth-of-type(4) {
+    background: var(--teal);
 }
 .med-img {
     height: 60%;
