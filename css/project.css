@@ -24,6 +24,7 @@ body {
 }
 .ruler {
     display: none;
+    opacity: 50%;
 }
 .main-grid {
     /*border: 2px solid black;*/
@@ -64,7 +65,7 @@ body {
     font-family: var(--big-font);
 }
 .dot-wrapper {
-    grid-area: 7 / 1/ span 4 /-1;
+    grid-area: 7 / 1 / span 4 / -1;
 }
 .dot {
     height: 160px;
@@ -108,12 +109,12 @@ body {
 .dot4 {
     background: var(--teal)
 }
+.ruler
 .selected-work-wrapper {
     grid-area:  11 / 1 / span 3 / -1;
     padding: 10px;
     text-align: center;
     font-family: var(--small-font);
-
 }
 .last-wrapper {
     display: none;
@@ -360,7 +361,9 @@ span:nth-of-type(4) {
         display: none;
     }
     .nav-wrapper {
-
+    }
+    .main-grid {
+        height: 75vh;
     }
     #the-big-nav {
         width: 100%;
@@ -396,7 +399,9 @@ span:nth-of-type(4) {
         justify-content: space-evenly;
         align-items: center;
         font-family: var(--small-font);
-
+    }
+    .ruler {
+        display: inline;
     }
     #the-circles-wrappers {
         display: flex;
