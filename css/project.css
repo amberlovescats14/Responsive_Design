@@ -36,6 +36,9 @@ body {
 .nav-wrapper {
     grid-area: 1 / 1 / span 3 / -1;
 }
+#the-small-nav {
+
+}
 .header-wrapper {
     height: 100%;
     width: 100%;
@@ -59,7 +62,6 @@ body {
     font-size: 4vh;
     letter-spacing: 1px;
     font-family: var(--big-font);
-
 }
 .dot-wrapper {
     grid-area: 7 / 1/ span 4 /-1;
@@ -146,7 +148,6 @@ span {
     margin: 5px;
     font-family: var(--big-font);
     font-size: 3vw;
-
 }
 span:nth-of-type(1) {
     background: var(--red)
@@ -182,22 +183,29 @@ span:nth-of-type(4) {
     width: 100%;
     display: grid;
     grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-
+}
+#the-med-nav {
+    display: none;
+}
+#the-big-nav {
+    display: none;
 }
 .white-line {
     background: white;
     grid-area: 3 / 1 / span 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .circle-pic-box {
     /*background: yellow;*/
     /*border-radius: 50%;*/
     grid-area: 2 / 3 / span 5 / span 8;
-
 }
 .circle-pic {
     height: 115px;
     width: 115px;
-    margin-left: 30%;
+    /*margin-left: 30%;*/
     border-radius: 50%;
 }
 .codeup-design {
@@ -233,9 +241,15 @@ span:nth-of-type(4) {
     }
 }
 
-@media screen and (min-width:576px){
+@media screen and (min-width:768px){
+    #the-small-nav {
+        display: none;
+    }
+    #the-med-nav {
+        display: flex;
+    }
     .main-grid {
-        height: 175vh;
+        height: 125vh;
     }
     .header-wrapper {
         height: 100%;
@@ -251,7 +265,6 @@ span:nth-of-type(4) {
 
     .header-wrapper h2 {
             font-size: 48px;
-
     }
     .dot {
         height: 105px;
