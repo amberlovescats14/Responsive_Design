@@ -239,6 +239,30 @@ span:nth-of-type(4) {
         align-self: flex-start;
     }
 }
+
+/*MEDIUM_SCREENS */
 @media screen and (min-width:992px) {
+    #the-circles-wrappers {
+        display: flex;
+        justify-content: space-between;
+    }
+    #medium-screen-wrapper {
+        flex: 2;
+        justify-content: space-between;
+    }
+
+    .last-wrapper {
+        display: inline-block;
+        flex: 1
+    }
+    .featured-wrapper {
+        width: 40%
+    }
+    .med-img {
+        height: 60%;
+    }
+    .selected-work-wrapper >  p {
+        margin-right: 83%;
+    }
 
 }
