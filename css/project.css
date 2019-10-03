@@ -25,7 +25,7 @@ body {
     display: none;
 }
 .main-grid {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     width: 100vw;
     height: 175vh;
     display: grid;
@@ -238,4 +238,7 @@ span:nth-of-type(4) {
     .lil-not-circle p {
         align-self: flex-start;
     }
+}
+@media screen and (min-width:992px) {
+
 }
