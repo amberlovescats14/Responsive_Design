@@ -132,6 +132,7 @@ body {
     justify-self: flex-start;
     margin-left: 10px;
 }
+
 .lil-not-circle div {
     display: flex;
 }
@@ -160,7 +161,7 @@ span:nth-of-type(4) {
     background: var(--teal);
 }
 .med-img {
-    height: 60%;
+    height: 70%;
     width: 80%;
     border: 5px solid var(--dark-white);
 }
@@ -185,18 +186,25 @@ span:nth-of-type(4) {
 }
 .white-line {
     background: white;
-    grid-area: 2 / 1 / span 3 / -1;
+    grid-area: 3 / 1 / span 2 / -1;
+}
+.circle-pic-box {
+    /*background: yellow;*/
+    /*border-radius: 50%;*/
+    grid-area: 2 / 3 / span 5 / span 8;
+
 }
 .circle-pic {
-    height: 200px;
-    width: 230px;
-    grid-area: 1 / 5 / span 2 / span 2;
+    height: 115px;
+    width: 115px;
+    margin-left: 30%;
+    border-radius: 50%;
 }
 .codeup-design {
-    grid-area: 5 / 1 / span 3 / -1;
+    grid-area:6 / 1 / span 3 / -1;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     font-size: 5.5vh;
     font-family: var(--small-font);
     font-weight: 100;
@@ -218,8 +226,14 @@ span:nth-of-type(4) {
     display: none
 }
 /*FOR SMALL SCREENS*/
+@media screen and (min-width: 450px){
+    .dot {
+        width: 200px;
+        height: 200px;
+    }
+}
 
-@media screen and (min-width:768px){
+@media screen and (min-width:576px){
     .main-grid {
         height: 175vh;
     }
@@ -234,15 +248,16 @@ span:nth-of-type(4) {
     .brake {
         display: none;
     }
+
     .header-wrapper h2 {
-        /*margin-bottom: 75px;*/
-        font-size: 7vw;
-        /*letter-spacing: 0;*/
-        /*font-weight: 900;*/
-        /*font-family: var(--big-font);*/
+            font-size: 48px;
+
     }
     .dot {
-        font-size: 40px;
+        height: 105px;
+        width:  105px;
+        font-size: 28px;
+        border: 6px solid white;
     }
     .dot-wrapper {
         grid-area: 7 / 1/ span 2 /-1;
@@ -258,9 +273,8 @@ span:nth-of-type(4) {
         display: block;
     }
     .featured-wrapper {
-        width: 30%;
+        width: 41%;
         height: 50%;
-        /*background: red;*/
         margin: 25px;
     }
     .med-img {
@@ -271,18 +285,18 @@ span:nth-of-type(4) {
         height: 20px;
         width: 20px;
         font-size: 1.5vh;
-        /*margin: 0;*/
     }
     #feature2, #feature3, #feature4 {
         display: inline-block;
     }
     .lil-not-circle {
         display: flex;
-        /*border: 2px solid black;*/
         justify-content: space-between;
+        font-size: 12px;
+        width: 100%
     }
     .lil-not-circle p {
-        align-self: flex-start;
+        margin-top: 1vh;
     }
 }
 
