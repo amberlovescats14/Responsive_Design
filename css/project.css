@@ -11,6 +11,7 @@
     --teal: #00aba9;
     --light-white: #f0f0f0;
     --dark-white: #e6e6e6;
+    --twitter-color: #1DA0F1;
 }
 
 *, *:before, *:after {
@@ -114,7 +115,6 @@ body {
 
 }
 .last-wrapper {
-    background: yellow;
     display: none;
 }
 #feature2, #feature3, #feature4 {
@@ -172,8 +172,8 @@ span:nth-of-type(4) {
 
 }
 .small-img {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
 }
 #p2 {
     display: none;
@@ -260,10 +260,13 @@ span:nth-of-type(4) {
 
     .last-wrapper {
         display: inline-block;
-        flex: 1
+        flex: 1;
+        padding: 0 15px ;
     }
     .featured-wrapper {
-        width: 40%
+        width: 40%;
+        margin: 10px;
+
     }
     .med-img {
         height: 60%;
@@ -297,7 +300,35 @@ span:nth-of-type(4) {
     .p-wrapper p {
         margin-left: 4%;
     }
-    /*.last-wrapper > p {*/
-    /*    float: left;*/
-    /*}*/
+    .mid img {
+        margin-left: 20px;
+    }
+    .mid  h6 {
+        font-family: var(--big-font);
+        font-size: 2vw;
+        text-align: left;
+        margin-left: 20px;
+        line-height: 1.3;
+    }
+    .the-twitter-stuff {
+        padding-left: 15px;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .top-tweet-wrapper {
+        display: flex;
+
+    }
+    .top-tweet-wrapper > i, .top-tweet-wrapper > h6 {
+        padding: 5px;
+    }
+    .lorem {
+        text-align: left;
+    }
+    .fab {
+        color: var(--twitter-color);
+    }
 }
