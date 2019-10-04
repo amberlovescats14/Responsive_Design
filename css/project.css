@@ -257,11 +257,12 @@ span:nth-of-type(4) {
     #the-med-nav {
         display: flex;
     }
-    .codeup-design {
-
-    }
     .main-grid {
         height: 125vh;
+    }
+    .codeup-design {
+        position: relative;
+        top: 1em;
     }
     .header-wrapper {
         height: 100%;
@@ -381,6 +382,7 @@ span:nth-of-type(4) {
         grid-template-columns: repeat(12, 1fr)
     }
     .codeup-design {
+        position: unset;
         grid-area: 4 / 3 / span 4 / span 4;
         font-size: 28px;
         font-weight: 200;
