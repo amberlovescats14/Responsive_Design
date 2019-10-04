@@ -26,7 +26,6 @@ hr {
     display: none;
 }
 .main-grid {
-    /*border: 2px solid black;*/
     width: 100vw;
     height: 175vh;
     display: grid;
@@ -108,7 +107,6 @@ hr {
 .dot4 {
     background: var(--teal)
 }
-.ruler
 .selected-work-wrapper {
     grid-area:  11 / 1 / span 3 / -1;
     padding: 10px;
@@ -128,7 +126,6 @@ hr {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
 }
 .lil-not-circle p {
     justify-self: flex-start;
@@ -198,14 +195,11 @@ span:nth-of-type(4) {
     align-items: center;
 }
 .circle-pic-box {
-    /*background: yellow;*/
-    /*border-radius: 50%;*/
     grid-area: 2 / 3 / span 5 / span 8;
 }
 .circle-pic {
     height: 115px;
     width: 115px;
-    /*margin-left: 30%;*/
     border-radius: 50%;
 }
 .codeup-design {
@@ -227,7 +221,6 @@ span:nth-of-type(4) {
     padding-left: 5vw;
     padding-right: 5vw;
 }
-
 
 /*//NAV STUFF*/
 #the-med-nav, #the-big-nav {
@@ -264,6 +257,9 @@ span:nth-of-type(4) {
     #the-med-nav {
         display: flex;
     }
+    .codeup-design {
+
+    }
     .main-grid {
         height: 125vh;
     }
@@ -293,7 +289,6 @@ span:nth-of-type(4) {
     }
     .selected-work-wrapper {
         grid-area:  9 / 1 / span 5 / -1;
-        /*background-color: #7cb06c;*/
     }
     .selected-work-wrapper p {
         margin-bottom: 50px;
@@ -327,7 +322,6 @@ span:nth-of-type(4) {
     .lil-not-circle p {
         margin-top: 1vh;
     }
-    /*//nav*/
     #the-small-nav {
         display: none;
     }
@@ -360,20 +354,14 @@ span:nth-of-type(4) {
         grid-area:  2 / 3 / span 6 / span 8;
         display: flex;
         justify-content: center;
-
     }
     .codeup-design {
         grid-area: 8 / 1 / span 3 /  -1;
-
     }
-
-
 }
 
 /*MEDIUM_SCREENS */
 @media screen and (min-width: 768px) {
-
-
     #the-med-nav {
         display: none;
     }
@@ -382,6 +370,9 @@ span:nth-of-type(4) {
     .main-grid {
         height: 120vh;
     }
+    .navItem {
+        margin-right: 1.5em;
+    }
     #the-big-nav {
         width: 100%;
         height: 100%;
@@ -389,26 +380,15 @@ span:nth-of-type(4) {
         grid-template-rows: repeat(12, 1fr);
         grid-template-columns: repeat(12, 1fr)
     }
-    .white-line {
-        height: 60px;
-        grid-area: 4 / 1 / span 2 / -1;
-    }
-    .circle-pic-box {
-        grid-area: 4 / 1 / span 2 / span 2;
-        position: relative;
-    }
-    .circle-pic {
-        position: relative;
-        bottom: 20px;
-
-    }
     .codeup-design {
         grid-area: 4 / 3 / span 4 / span 4;
         font-size: 28px;
         font-weight: 200;
         letter-spacing: 2px;
-        position: relative;
-        bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
     }
     .navLinksLarge {
         grid-area: 4 / 8 / span 3 / -1;
@@ -416,6 +396,28 @@ span:nth-of-type(4) {
         justify-content: space-evenly;
         align-items: center;
         font-family: var(--small-font);
+    }
+    .white-line {
+        height: 60px;
+        grid-area: 4 / 1 / span 2 / -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .white-line-wrapper {
+        width: 1048px;
+        justify-self: flex-start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .white-line-right {
+        justify-self: flex-start;
+        display: flex;
+    }
+    .circle-pic-box {
+        grid-area: 4 / 1 / span 2 / span 2;
+        position: relative;
     }
     .ruler {
         display: inline;
@@ -428,7 +430,6 @@ span:nth-of-type(4) {
         flex: 2;
         justify-content: space-between;
     }
-
     .last-wrapper {
         display: inline-block;
         flex: 1;
@@ -437,7 +438,6 @@ span:nth-of-type(4) {
     .featured-wrapper {
         width: 40%;
         margin: 10px;
-
     }
     .med-img {
         height: 60%;
@@ -491,10 +491,8 @@ span:nth-of-type(4) {
         flex-direction: column;
         justify-content: space-evenly;
     }
-
     .top-tweet-wrapper {
         display: flex;
-
     }
     .top-tweet-wrapper > i, .top-tweet-wrapper > h6 {
         padding: 5px;
@@ -529,7 +527,6 @@ span:nth-of-type(4) {
     }
     .featured-wrapper {
         width: 43%;
-
     }
     .selected-work-wrapper {
         padding-right: 13vw;
